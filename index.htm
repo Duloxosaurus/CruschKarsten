@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crusch Camp - Página Oficial de Crusch Karsten</title>
+    <link rel="shortcut icon" href="https://goodsrepublic.com/media/binary/005/265/191/5265191.jpg" type="image/vnd.microsoft.icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --color-primary: #1E3A2B;
+            --color-secondary: #C8B288;
+            --color-accent: #5A7247;
+            --color-light: #F4F1E6;
+            --color-dark: #14231A;
+            --color-text: #333333;
+            --shadow: 0 5px 15px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--color-text);
+            background-color: var(--color-light);
+            line-height: 1.6;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23c8b288' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .web_line {
+            height: 5px;
+            background: linear-gradient(90deg, var(--color-secondary), var(--color-accent), var(--color-primary));
+        }
+        
+        .contents {
+            display: flex;
+            flex-direction: row-reverse;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .side {
+            width: 280px;
+            background: var(--color-primary);
+            border-radius: 10px;
+            padding: 20px;
+            margin-left: 20px;
+            box-shadow: var(--shadow);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .logo img {
+            max-width: 200px;
+            height: auto;
+            transform: scaleX(-1);
+        }
+        
+        .global-menu ul {
+            list-style: none;
+        }
+        
+        .global-menu li {
+            margin-bottom: 10px;
+        }
+        
+        .global-menu a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 5px;
+            transition: var(--transition);
+            font-weight: 400;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+        
+        .global-menu a:hover {
+            background-color: rgba(255,255,255,0.1);
+            transform: translateX(-5px);
+        }
+        
+        .global-menu a i {
+            margin-left: 12px;
+            margin-right: 0;
+            font-size: 18px;
+            width: 24px;
+            text-align: center;
+        }
+        
+        #twitter_icon {
+            display: block;
+            margin: 20px auto 0;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            padding: 8px;
+            transition: var(--transition);
+            transform: scaleX(-1);
+        }
+        
+        #twitter_icon:hover {
+            transform: scaleX(-1) scale(1.1);
+        }
+        
+        .main-contents {
+            flex: 1;
+        }
+        
+        #description {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-style: italic;
+            box-shadow: var(--shadow);
+            border-right: 4px solid var(--color-accent);
+            border-left: none;
+        }
+        
+        .sli {
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .slider-container {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+            background-size: cover;
+            background-position: center;
+            transform: scaleX(-1);
+        }
+        
+        .slide.active {
+            opacity: 1;
+        }
+        
+        .slide-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 20px;
+            transform: scaleX(-1);
+        }
+        
+        .slider-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+            flex-direction: row-reverse;
+        }
+        
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .slider-dot.active {
+            background: white;
+            transform: scale(1.2);
+        }
+        
+        .wrap {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .news_title_box {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--color-secondary);
+        }
+        
+        .news_title h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+            font-size: 28px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .news_title h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--color-accent);
+        }
+        
+        .news_more a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+            flex-direction: row-reverse;
+        }
+        
+        .news_more a:hover {
+            color: var(--color-primary);
+        }
+        
+        .news_more a i {
+            margin-right: 5px;
+            margin-left: 0;
+            transform: rotate(180deg);
+        }
+        
+        .update dl {
+            display: flex;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            flex-direction: row-reverse;
+        }
+        
+        .update dt {
+            width: 120px;
+            flex-shrink: 0;
+            font-weight: 600;
+            color: var(--color-accent);
+            text-align: right;
+        }
+        
+        .update dd {
+            flex: 1;
+            text-align: right;
+        }
+        
+        .update a {
+            color: var(--color-dark);
+            text-decoration: none;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .update a:before {
+            content: "⚔️";
+            margin-left: 8px;
+            margin-right: 0;
+        }
+        
+        .update a:hover {
+            color: var(--color-accent);
+        }
+        
+        .event_box {
+            display: flex;
+            margin-bottom: 30px;
+            background: var(--color-light);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: var(--transition);
+            flex-direction: row-reverse;
+        }
+        
+        .event_box:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        
+        .eve-img {
+            width: 200px;
+            flex-shrink: 0;
+        }
+        
+        .eve-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            transform: scaleX(-1);
+        }
+        
+        .event_box:hover .eve-img img {
+            transform: scaleX(-1) scale(1.05);
+        }
+        
+        .eve-right {
+            flex: 1;
+            padding: 20px;
+            text-align: right;
+        }
+        
+        .eve_title h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .eve-now {
+            display: inline-block;
+            background: var(--color-accent);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-left: 10px;
+            margin-right: 0;
+        }
+        
+        .eve-right h4 {
+            color: var(--color-dark);
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+        
+        .eve-right h3 {
+            margin-bottom: 10px;
+        }
+        
+        .eve-right h3 a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .eve-right h3 a:hover {
+            color: var(--color-accent);
+        }
+        
+        .eve-right p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+        
+        .eve-btn {
+            display: inline-block;
+            background: var(--color-primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+        
+        .eve-btn:hover {
+            background: var(--color-accent);
+            transform: translateY(-2px);
+        }
+        
+        .footer {
+            background: var(--color-dark);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer a {
+            color: var(--color-secondary);
+            text-decoration: none;
+            transition: var(--transition);
+            margin: 0 10px;
+        }
+        
+        .footer a:hover {
+            color: white;
+        }
+        
+        .copy {
+            background: var(--color-primary);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+        
+        #page-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: auto;
+            z-index: 100;
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        #page-top.visible {
+            opacity: 1;
+        }
+        
+        #page-top a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: var(--color-accent);
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            transform: rotate(180deg);
+        }
+        
+        #page-top a:hover {
+            background: var(--color-primary);
+            transform: rotate(180deg) translateY(-5px);
+        }
+        
+        @media (max-width: 1024px) {
+            .contents {
+                flex-direction: column;
+            }
+            
+            .side {
+                width: 100%;
+                position: static;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+            
+            .global-menu ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .global-menu li {
+                margin: 5px;
+            }
+            
+            .global-menu a {
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .global-menu a i {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .event_box {
+                flex-direction: column;
+            }
+            
+            .eve-img {
+                width: 100%;
+                height: 200px;
+            }
+            
+            .update dl {
+                flex-direction: column;
+            }
+            
+            .update dt {
+                width: 100%;
+                margin-bottom: 5px;
+                text-align: left;
+            }
+            
+            .update dd {
+                text-align: left;
+            }
+            
+            .eve-right {
+                text-align: left;
+            }
+            
+            .news_title_box {
+                flex-direction: row;
+            }
+            
+            .news_more a {
+                flex-direction: row;
+            }
+            
+            .news_more a i {
+                transform: rotate(0deg);
+                margin-right: 0;
+                margin-left: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="web_line"></div>
+    <div class="contents">
+        <div class="side">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://64.media.tumblr.com/415e2d23d0a17d93f33bd9addd3d1f4f/tumblr_inline_oqh12mqJ3r1tmcldt_500.gifv" alt="Crusch Camp">
+                </a>
+            </div>
+            <div class="global-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-newspaper"></i> Noticias
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-scale-balanced"></i> Propuestas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-handshake"></i> Alianzas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar-alt"></i> Eventos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt"></i> Sede Central
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-briefcase"></i> Únete al equipo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="yodelfuturoponuncorreoaqui">
+                            <i class="fas fa-envelope"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+                <a href="https://twitter.com/Duloxosaurus" target="_blank">
+                    <img id="twitter_icon" src="https://wallpapercave.com/wp/wp15221711.webp" alt="X oficial">
+                </a>
+            </div>
+        </div>
+        <div class="main-contents">
+            <p id="description">"CRUSCH CAMP NEEDS YOU."</p>
+            
+            <div class="sli">
+                <div class="slider-container">
+                    <div class="slide active" style="background-image: url('https://wallpapercave.com/wp/wp11012910.png');">
+                        <div class="slide-overlay">
+                            <h2>Un futuro de honestidad y prosperidad</h2>
+                            <p>Crusch Karsten - Candidata al trono de Lugunica</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('https://pm1.aminoapps.com/7142/df504c5352feaf94228e3a7e6545aef60fc90e21r1-512-288v2_hq.jpg');">
+                        <div class="slide-overlay">
+                            <h2>Reformas para el crecimiento económico</h2>
+                            <p>Reducción de impuestos y desregulación para estimular la inversión y creación de empleo</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('https://static.wikia.nocookie.net/rezero/images/0/08/ReZero_world_map.jpg/revision/latest/scale-to-width-down/1000?cb=20210716200227');">
+                        <div class="slide-overlay">
+                            <h2>Fortalecimiento de las relaciones internacionales</h2>
+                            <p>Diplomacia abierta y beneficiosa para el Reino de Lugunica</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('https://static.wikia.nocookie.net/rezero/images/8/8d/Reino_de_Lugunica_-_VC.png/revision/latest?cb=20171013054110&path-prefix=es');">
+                        <div class="slide-overlay">
+                            <h2>Transparencia en el gobierno</h2>
+                            <p>Nada se ocultará a los ciudadanos de Lugunica</p>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <div class="slider-dot active"></div>
+                        <div class="slider-dot"></div>
+                        <div class="slider-dot"></div>
+                        <div class="slider-dot"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wrap">
+                <div class="news_title_box">
+                    <div class="news_title">
+                        <h2>Últimas Noticias</h2>
+                    </div>
+                    <div class="news_more">
+                        <a href="#">Ver todas <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="update">
+                    <dl>
+                        <dt>09/09/2025</dt>
+                        <dd><span><a href="#">Crusch Karsten anuncia nuevo plan de seguridad para las caravanas comerciales.</a></span></dd>
+                    </dl>
+                    <dl>
+                        <dt>12/09/2025</dt>
+                        <dd><span><a href="#">[FINALIZADO] Ceremonia anual en honor a los caídos en la Batalla de la Llanura de Flanders.</a></span></dd>
+                    </dl>
+                    <dl>
+                        <dt>14/09/2025</dt>
+                        <dd><span><a href="#">Crusch Karsten conmemora 5 años de la victoria sobre la "Gran Ballena Blanca".</a></span></dd>
+                    </dl>
+                    <dl>
+                        <dt>16/09/2025</dt>
+                        <dd><span><a href="#">Crusch karsten recupera oficialmente su memoria tras el incidente de la Ballena Blanca.</a></span></dd>
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="wrap">
+                <div class="event_box">
+                    <div class="eve-img">
+                        <a href="#">
+                            <img width="200" height="280" src="https://pm1.aminoapps.com/6548/cf45c5c0a7643f3d5bae4ea49d9e9358d7135452_hq.jpg" alt="orden y tradicion">
+                        </a>
+                    </div>
+                    <div class="eve-right">
+                        <div class="eve_title">
+                            <h2>Crónicas del reino</h2>
+                        </div>
+                        <h4>
+                            <div class="eve-now">
+                                Fecha
+                            </div>
+                            10/09/2025
+                        </h4>
+                        <h3><a href="#">Orden y Tradición: El camino de Lugunica hacia la grandeza</a></h3>
+                        <p>Crusch karsten presentará su visión para fortalecer la seguridad nacional, valores tradicionales y soberanía en la plaza central. Ciudadanos patriotas están convocados...</p>
+                        <a href="#">
+                            <div class="eve-btn">Continuar leyendo »</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="event_box">
+                    <div class="eve-img">
+                        <a href="#">
+                            <img width="200" height="280" src="https://images.alphacoders.com/747/thumb-1920-747935.png" alt="Debate político">
+                        </a>
+                    </div>
+                    <div class="eve-right">
+                        <div class="eve_title">
+                            <h2>Manifiestos de la duquesa</h2>
+                        </div>
+                        <h4>
+                            <div class="eve-now">
+                                Fecha
+                            </div>
+                            05/09/2025
+                        </h4>
+                        <h3><a href="#"> Debate sobre políticas económicas con representantes comerciales.</a></h3>
+                        <p>Un análisis detallado de las propuestas económicas de Crusch Karsten y su impacto en el comercio de Lugunica...</p>
+                        <a href="#">
+                            <div class="eve-btn">Continuar leyendo »</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>
+            <a href="#">Propuestas</a>｜<a href="#">Alianzas</a>｜<a href="#">Sede Central</a>｜<a href="#">Únete al equipo</a>｜<a href="mailto:contacto@cruschcamp.com">Contacto</a>｜<a href="#">Noticias</a>｜<a href="#">Eventos</a>
+        </p>
+    </div>
+    <div class="copy">
+        <p>© 2025 Crusch Camp. Todos los derechos reservados. </p>
+    </div>
+    <div class="web_line"></div>
+    
+   <p id="page-top"><a href="#">
+    <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Subir" style="width: 30px; height: 30px;">
+</a></p>
+    
+    <script>
+        // Slider functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.slider-dot');
+            let currentSlide = 0;
+            
+            function showSlide(n) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                currentSlide = (n + slides.length) % slides.length;
+                
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+            
+            // Auto slide
+            setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, 5000);
+            
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                });
+            });
+            
+            // Scroll to top button
+            const topBtn = document.getElementById('page-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 100) {
+                    topBtn.classList.add('visible');
+                } else {
+                    topBtn.classList.remove('visible');
+                }
+            });
+            
+            topBtn.querySelector('a').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
